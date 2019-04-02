@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman - Planetarium</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Rubik" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<section id="main-panel">
+			<p id="bio">Are you ready to travel to Space? Name that Planets!</p>
+			<p id="prompt"></p>
+			<p>Wins: <span id="win-count"></span></p>
+			<div id="current-word" class="letters"></div>
+			<p>Number of Guesses Remaining: <span id="guess-count"></span></p>
+			<p>Letters Already Guessed</p>
+			<div id="failed-guesses" class="letters"></div>
+		</section>
+	</div>
+	<audio id="wrong-letter" preload="true">
+	    <source src="assets/audio/fail-trombone-01.mp3" type="audio/mp3">
+	</audio>
+	<audio id="correct-word" preload="true">
+	    <source src="assets/audio/TheStarSpangledBanner_BandOnly.mp3" type="audio/mp3">
+	</audio>
+	<!-- 	JavaScript file linked below -->
+	<script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>

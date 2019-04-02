@@ -1,0 +1,58 @@
+body {
+	font-size: 3em;
+	font-family: 'Rubik', sans-serif;
+}
+
+.container {
+	flex-direction: row;
+	min-height: 100vh;
+}
+
+#header {
+	flex-grow: 1;
+	text-align: center;
+	padding: 30px;
+}
+
+#frame {
+	display: block;
+	height: auto;
+	max-width: 80%;
+	margin: auto;
+	margin-top: 25px;
+}
+
+#bio {
+	font-size: 30px;
+	margin-top: 25px;
+}
+
+small {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #888;
+	letter-spacing: 3px;
+	padding: 10px;
+}
+
+.letters {
+	letter-spacing: .5em;
+}
+
+#main-panel {
+	flex: 0 0 800px;
+	background-image: url("../images/Background-planets.jpg");
+	color: #fff;
+	padding: 300px;
+	font-size: .8em;
+}
+
+#main-panel > p, #main-panel > div {
+	margin: 0 0 1em 0;
+}
+
+#current-word, #failed-guesses {
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.3;
+}
